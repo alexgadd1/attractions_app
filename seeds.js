@@ -1,15 +1,15 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/project-2');
+mongoose.connect('mongodb://localhost/attraction-app');
 
-var Author = require("./models/author");
+var Attraction = require("./models/attraction");
 
 mongoose.promise = global.Promise;
 
-Author.remove({}, function(err) {
+Attraction.remove({}, function(err) {
     console.log(err);
 });
 
-var saintExupery = new Author({
+var saintExupery = new Attraction({
     first_name: 'Antoine',
     last_name: 'de Saint-Exupery',
     country: 'France',
@@ -17,7 +17,7 @@ var saintExupery = new Author({
     publication_year: '1943'
 });
 
-var fforde = new Author({
+var fforde = new Attraction({
     first_name: 'Jasper',
     last_name: 'Fforde',
     country: 'England',
@@ -25,14 +25,14 @@ var fforde = new Author({
     publication_year: '2001'
 });
 
-var willig = new Author({
+var willig = new Attraction({
     first_name: 'Lauren',
     last_name: 'Willig',
     country: 'United States',
     book_title: 'The Secret History of the Pink Carnation', 	publication_year: '2000'
 });
 
-var lutz = new Author({
+var lutz = new Attraction({
     first_name: 'Lisa',
     last_name: 'Lutz',
     country: 'Unites States',

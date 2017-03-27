@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-var Attractions = require('../models/attractions');
+var Attraction = require('../models/attraction');
 
 // index authors
 router.get('/', function(req, res) {
-    // res.send('authors will be here');
+    // res.send('attractions will be here');
     Attraction.find({})
         .exec(function(err, authors) {
             if(err) console.log(err);
@@ -18,14 +18,19 @@ router.get('/', function(req, res) {
         });
 });
 
-// show author
+// new attraction
+router.get('/new', function(req, res) {
+    res.render('attractions/new');
+});
+
+// show attraction
 router.get('/:id', function(req, res) {
-    Author.findById(req.params.id)
+    Attraction.findById(req.params.id)
         .exec(function(err, author) {
             if(err) console.log(err);
 
-            console.log(author);
-            //res.send(author);
+            console.log(attraction);
+            //res.send(attraction);
             res.render('attractions/show', {
             	attractions: attractions
             });
