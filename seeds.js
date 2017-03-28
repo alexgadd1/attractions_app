@@ -49,19 +49,19 @@ var georgiaAquarium = new Attraction({
 worldOfCocaCola.save(function(err) {
   if (err) console.log(err);
 
-  console.log('de Saint-Exupery created!');
+  console.log('World of Coca Cola created!');
 });
 
 centennialOlympicPark.save(function(err) {
   if (err) console.log(err);
 
-  console.log('Fforde created!');
+  console.log('Centennial Olympic Park created!');
 });
 
 georgiaAquarium .save(function(err) {
   if (err) console.log(err);
 
-  console.log('Willig created!');
+  console.log('Georgia Aquarium created!');
 });
 
 // lutz.save(function(err) {
