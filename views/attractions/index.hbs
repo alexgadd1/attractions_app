@@ -3,11 +3,11 @@
 <ol>
     {{#each attractions}}
     <li>
-        <h1><a href="/attractions/{{this.id}}">{{this.fullName}}</a></h1>
-        <h3>{{this.country}}</h3>
-        <p>{{this.book_title}}, {{this.publication_year}}</p>
+        <h1><a href="/attractions/{{this.id}}">{{this.attraction_name}}</a></h1>
+        <h3>{{this.address}}</h3>
+        <p>{{this.admission_price}}, {{this.description}}</p>
     </li>
     {{/each}}
 </ol>
 
-<a href="/authors/new" class="btn btn-default">Create a New Author</a>
+<a href="/attractions/new" class="btn btn-default">Create a New Attractions</a>

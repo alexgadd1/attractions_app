@@ -7,7 +7,7 @@ var Attraction = require('../models/attraction');
 router.get('/', function(req, res) {
     // res.send('attractions will be here');
     Attraction.find({})
-        .exec(function(err, authors) {
+        .exec(function(err, attractions) {
             if(err) console.log(err);
 
             console.log(attractions);
@@ -28,9 +28,9 @@ router.post('/', function(req, res) {
     var attraction = new Attraction({
         first_name: req.body.first_name,
         last_name: req.body.last_name,
-        country: req.body.country,
-        book_title: req.body.book_title,
-        publication_year: req.body.publication_year
+        address: req.body.address,
+        admission_price: req.body.admission_price,
+        description: req.body.description
     });
     attraction.save(function(err, author){
         if (err) { console.log(err); }
@@ -74,9 +74,9 @@ router.patch('/:id', function(req, res) {
     Attraction.findByIdAndUpdate(req.params.id, {
         first_name: req.body.first_name,
         last_name: req.body.last_name,
-        country: req.body.country,
-        book_title: req.body.book_title,
-        publication_year: req.body.publication_year
+        address: req.body.address,
+        admission_price: req.body.admission_price,
+        description: req.body.description
     }, {new: true})
         .exec(function(err, attraction) {
             if (err) { console.log(err); }

@@ -4,11 +4,11 @@ var Schema = mongoose.Schema;
 mongoose.promise = global.Promise;
 
 var AttractionSchema = new Schema({
-    first_name: String,
-    last_name: String,
-    country: String,
-    book_title: String,
-    publication_year: String
+    attraction_name: String,
+    address: String,
+    admission_price: String,
+    description: String,
+    //?url_link: String//?
 });
 
 AttractionSchema.pre('save', function(next){
@@ -19,7 +19,7 @@ AttractionSchema.pre('save', function(next){
     }
     next();
 });
-
+//// - first_name/last_name////
 AttractionSchema.virtual('fullName').get(function () {
     return this.first_name + ' ' + this.last_name;
 });

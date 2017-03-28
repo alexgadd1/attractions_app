@@ -1,9 +1,9 @@
-<h1>{{attraction.fullName}}</h1>
-<h3>{{attraction.country}}</h3>
-<p>{{attraction.book_title}}, {{attraction.publication_year}}</p>
+<h1>{{attraction.attraction_name}}</h1>
+<h3>{{attraction.address}}</h3>
+<p>{{attraction.admission_price}}, {{attraction.description}}</p>
 
 <div>
-    <a href="/attractions/{{attraction.id}}/edit" class="btn btn-primary">Edit {{attraction.fullName}}</a>
+    <a href="/attractions/{{attraction.id}}/edit" class="btn btn-primary">Edit {{attraction.attraction_name}}</a>
 </div>
 
 <form action="/attractions/{{attraction.id}}?_method=DELETE" method="POST">
