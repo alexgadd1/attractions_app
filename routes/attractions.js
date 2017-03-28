@@ -26,8 +26,6 @@ router.get('/new', function(req, res) {
 // create attraction
 router.post('/', function(req, res) {
     var attraction = new Attraction({
-        // first_name: req.body.first_name,
-        // last_name: req.body.last_name,
         attraction_name: req.body.attraction_name,
         address: req.body.address,
         admission_price: req.body.admission_price,
@@ -73,8 +71,6 @@ router.get('/:id/edit', function(req,res) {
 // update attraction
 router.patch('/:id', function(req, res) {
     Attraction.findByIdAndUpdate(req.params.id, {
-        // first_name: req.body.first_name,
-        // last_name: req.body.last_name,
         attraction_name: req.body.attraction_name,
         address: req.body.address,
         admission_price: req.body.admission_price,
