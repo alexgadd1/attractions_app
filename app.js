@@ -12,16 +12,19 @@ var methodOverride = require('method-override');
 var db = require('./db');
 
 mongoose.connect('mongodb://localhost/attraction-app');
-var attractions = require('./routes/attractions');
+
+//var attractions was originally on line 16
 var index = require('./routes/index');
 var users = require('./routes/users');
+var attractions = require('./routes/attractions');
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
-app.use('/attractions', attractions);
+//app.use('/attractions', attractions);
+// line 26 not included in updated info
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -30,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
+
 app.use(session({
   secret: "derpderpderpcats",
   resave: false,
@@ -38,6 +42,8 @@ app.use(session({
 
 app.use('/', index);
 app.use('/users', users);
+app.use('attractions', attractions);
+//line 45 in updated info
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
