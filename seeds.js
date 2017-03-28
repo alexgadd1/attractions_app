@@ -29,7 +29,8 @@ var willig = new Attraction({
     first_name: 'Lauren',
     last_name: 'Willig',
     country: 'United States',
-    book_title: 'The Secret History of the Pink Carnation', 	publication_year: '2000'
+    book_title: 'The Secret History of the Pink Carnation', 	
+    publication_year: '2000'
 });
 
 var lutz = new Attraction({
