@@ -42,7 +42,7 @@ app.use(session({
 
 app.use('/', index);
 app.use('/users', users);
-app.use('attractions', attractions);
+app.use('/attractions', attractions);
 //line 45 in updated info
 
 // catch 404 and forward to error handler

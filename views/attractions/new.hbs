@@ -1,14 +1,11 @@
 <h1>Create a New Attraction</h1>
 
 <div class="row">
-    <form action="/attractionss" method="POST" class="col-md-6 col-md-offset-3">
+    <form action="/attractions" method="POST" class="col-md-6 col-md-offset-3">
+        
         <div class="form-group">
-            <label for="first_name">First Name:</label>
-            <input type="text" name="first_name" class="form-control">
-        </div>
-        <div class="form-group">
-            <label for="last_name">Last Name:</label>
-            <input type="text" name="last_name" class="form-control">
+            <label for="attraction_name">attraction_name:</label>
+            <input type="text" name="attraction_name" class="form-control">
         </div>
         <div class="form-group">
             <label for="address">address:</label>
@@ -29,5 +26,3 @@
 </div>
 
 <a href="/attractions" class="btn btn-default">Main Page</a>
-
-

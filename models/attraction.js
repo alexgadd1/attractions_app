@@ -19,9 +19,5 @@ AttractionSchema.pre('save', function(next){
     }
     next();
 });
-//// - first_name/last_name////
-AttractionSchema.virtual('fullName').get(function () {
-    return this.first_name + ' ' + this.last_name;
-});
 
 module.exports = mongoose.model("Attraction", AttractionSchema);
