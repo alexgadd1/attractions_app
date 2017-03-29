@@ -47,7 +47,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/attractions', attractions);
 app.use('/sessions', sessions);
-app.use('/signup',);
+// app.use('/signup',);
 
 //line 45 in updated info
 
