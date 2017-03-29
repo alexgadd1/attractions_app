@@ -27,3 +27,8 @@ the app include:
 https://trello.com/b/qYERXATb/project-2 - Trello link
 
 https://protected-spire-54257.herokuapp.com/attractions - Heroku link
+
+ERD and WIREFRAMES
+
+https://github.com/alexgadd1/attractions_app/blob/master/20170329_092612.jpg
+
