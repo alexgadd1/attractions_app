@@ -22,5 +22,6 @@ the app include:
 
 - User login and passowrd functionallity.
 
-- Additional functionallity within site, such as additional picutes and information to render per attraction, link to webite for 
-attraction.  Also additional attractions sorted by category, and user rating system.
+- Additional functionallity within site, such as additional picutes and information to render per attraction, link to webite for attraction.  Also additional attractions sorted by category, and user rating system.
+
+https://trello.com/b/qYERXATb/project-2 - Trello link
