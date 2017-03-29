@@ -17,6 +17,9 @@ mongoose.connect('mongodb://localhost/attraction-app');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var attractions = require('./routes/attractions');
+var sessions = require('./routes/sessions');
+var sessions = require('./routes/sessions');
+var usersController = require('./routes/controller/users');
 
 var app = express();
 
@@ -24,6 +27,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 //app.use('/attractions', attractions);
+// app.use('/attractions', attractions);
 // line 26 not included in updated info
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
@@ -39,10 +43,12 @@ app.use(session({
   resave: false,
   saveUninitialized: false
 }));
-
 app.use('/', index);
 app.use('/users', users);
 app.use('/attractions', attractions);
+app.use('/sessions', sessions);
+app.use('/signup',);
+
 //line 45 in updated info
 
 // catch 404 and forward to error handler
