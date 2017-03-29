@@ -1,7 +1,9 @@
 body {
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/19/a3/55/19a355e93f78b9f1d7687c2aebf212f3.jpg");
+  color: white;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  text-align: center;
+  text-align: left;
 }
 
 a {
@@ -32,4 +34,10 @@ ol li {
 
 .btn.btn-default {
     margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: black;
 }
