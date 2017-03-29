@@ -10,8 +10,15 @@ var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
 var db = require('./db');
+require('dotenv').config()
 
-mongoose.connect('mongodb://localhost/attraction-app');
+
+// Harcoded URI
+// mongoose.connect('mongodb://localhost/attraction-app');
+
+// Flexible URI
+mongoose.connect(process.env.MONGODB_URI)
+
 
 //var attractions was originally on line 16
 var index = require('./routes/index');
