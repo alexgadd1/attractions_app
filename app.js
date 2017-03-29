@@ -19,7 +19,7 @@ var users = require('./routes/users');
 var attractions = require('./routes/attractions');
 var sessions = require('./routes/sessions');
 var sessions = require('./routes/sessions');
-var usersController = require('./routes/controller/users');
+var usersController = require('./routes/controllers/users');
 
 var app = express();
 
