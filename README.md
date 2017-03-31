@@ -35,3 +35,5 @@ https://github.com/alexgadd1/attractions_app/blob/master/20170329_092612.jpg
 https://github.com/alexgadd1/attractions_app/blob/master/20170329_093017.jpg
 
 https://ga-laxy.herokuapp.com/student/dashboard - Link to Profile
+
+file:///Users/alexgadd/alexGaddPortfolio/index.html - Link to my portfolio site
